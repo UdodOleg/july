@@ -26,4 +26,4 @@ const person = {
 // const person2 = {...person}; // ссылки на вложенные объекты сохраняются
 const person2 = JSON.parse(JSON.stringify(person));
 person2.contact.city='Kyiv';
-console.log(person.contact.city);
+console.log(person.contact.city); 

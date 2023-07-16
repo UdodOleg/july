@@ -1,4 +1,4 @@
-class Animales{
+class Animals{
     #color;
     #height;
     #food;
@@ -25,13 +25,13 @@ class Animales{
         console.log(`This animal is ${this.#name}`);
     }
 }
-Animales.prototype.voice = function() {
+Animals.prototype.voice = function() {
     console.log(`Animal ${this.get_name()} made a voice!`);
 }
-Animales.prototype.foo = function() {
+Animals.prototype.foo = function() {
     console.log(`Animal ${this.get_name()} made a poop!`);
 }
-const Giraffe = new Animales("yellow",250,`meat and leafs`,"giraffe");
+const Giraffe = new Animals("yellow",250,`meat and leafs`,"giraffe");
 Giraffe.display();
 Giraffe.voice();
 Giraffe.foo();

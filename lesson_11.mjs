@@ -77,6 +77,9 @@ for (const key in arr) {
 }
 // for ... of нельзя использовать для обхектов!
 const myString = 'Hey';
-for (const letter of myString) {
-    console.log(`${letter}`);
+const myName = (myString) => {
+    for (const letter of myString) {
+        console.log(`${letter}`);
+    }
 }
+export default myName

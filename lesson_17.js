@@ -1,0 +1,10 @@
+let s = 'Hello';
+console.log(s.concat(' there!').toUpperCase().replace('HELLO','Get out').toLowerCase().toUpperCase());
+var phrase = 'НАШЕ ПУТЕШЕСТВИЕ В ДУБАЙ';
+phrase = phrase.split(' ');
+console.log(phrase.length);
+phrase = phrase.join(' ');
+console.log(phrase);
+let nums = [];
+nums=Math.random()*(1000-0)+0;
+console.log(nums);

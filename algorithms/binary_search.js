@@ -22,12 +22,11 @@ function recursiveBinarySearch(arr,target) {
 }
 function search(arr,target,leftindex,rightindex) {
     if(leftindex>rightindex) {return -1;}
-    let middleindex = Math.floor((rightindex+leftindex)/2);
-    if(target==arr[middleindex]) {return middleindex;}
-    if(target<arr[middleindex]) {
-        return search(arr,target,leftindex,middleindex-1);
+    if(target==arr[Math.floor((rightindex+leftindex)/2)]) {return Math.floor((rightindex+leftindex)/2);}
+    if(target<arr[Math.floor((rightindex+leftindex)/2)]) {
+        return search(arr,target,leftindex,(Math.floor((rightindex+leftindex)/2))-1);
     }else {
-        return search(arr,target,middleindex+1,rightindex);
+        return search(arr,target,(Math.floor((rightindex+leftindex)/2))+1,rightindex);
     }
 }
 console.log(recursiveBinarySearch([-2,2,3,4,7,8],8)); // 5
